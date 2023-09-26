@@ -1,0 +1,178 @@
+html,body,figure,p,section,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+}
+
+*{
+    box-sizing: border-box;
+    scrollbar-width: none;
+    line-height: 1;
+    font-weight: normal;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+a{
+    color: white;
+    opacity: 0.5;;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.landing .description h1,
+.landing .description p{
+    font-size: 48pt;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+section .description{
+    position: sticky;
+    top: 0;
+    color: white;
+    padding: 30px;
+    z-index: 1;;
+    /* mix-blend-mode: difference; */
+}
+
+section .description .reflection,
+section .description .about{
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+section .description .about a{
+    color: black;
+}
+
+section .description,
+section .description a{
+    filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
+}
+
+section.project-container{
+    position: relative;
+}
+
+section.project-container .project-media{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* scrollbar-width: auto; */
+    /* font-size: 0; */
+}
+
+section.project-container .project-media div{
+    /* border: 5px solid green; */
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /* border-right: 1px solid black; */
+}
+
+section.project-container .project-media div img,
+section.project-container .project-media div video,
+section.project-container .project-media div iframe{
+    max-width: 75vw;
+    max-height: 75vh;
+    /* border: 10px solid orange; */
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#f22-dis-orient .project-media div iframe,
+#f22-hahaimonthevergeofamentalbreakdown .project-media div iframe,
+#f22-clock .project-media div iframe,
+#s23-sml-confessions .project-media div iframe,
+#s23-fbi-slang .project-media div iframe{
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+section.overview-container{
+    position: relative;
+}
+
+section.overview-container .overview-media{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+section.overview-container .overview-media div{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.overview-container .overview-media div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.overview-container .overview-media div figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.overview-container .overview-media div:nth-of-type(2) figure{
+    width: 100%;
+    height: 50%;
+}
+
+section.overview-container .overview-media figure img,
+section.overview-container .overview-media figure iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section.overview-container .overview-media div:nth-of-type(1) figure iframe{
+    height: 100vh;
+    width: 50vw;
+}
+
+section.overview-container .overview-media div:nth-of-type(2) figure iframe{
+    width: 50vw;
+    height: 50vh;
+}
+
+section.overview-container .overview-media div:nth-of-type(2) figure video{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(0, 255, 0);
+}
+
+/* section.overview-container .overview-media figure iframe{
+    max-width: 30%;
+    max-height: 80%;
+} */
